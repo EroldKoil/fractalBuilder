@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<canvas id="canvas" class="canvas"> </canvas>
+<div class="config">
+    <div>
+        <select id="lineWidth" class="lineWidth" size="1" >
+            <option disabled>Размер точек</option>
+            <option selected value="1">1px</option>
+            <option value="2">2px</option>
+            <option value="4">4px</option>
+        </select>
+    </div>
+
+    <input id="start" type="button" onclick="startStop()" value="Start">
+    <input type="button" onclick="addPoint()" value="Add">
+    <input type="button" onclick="save()" value="SAVE">
+    <div id="points" class="points" >
+        <div id="0" class="point">
+            <div class="pointNumber">0</div>
+            <div class="pointProp">
+                <div>
+                    <label>Путь</label><input id='width0'type="text" value="0.5">
+                </div>
+                <div>
+                    <label>Вероятность</label><input id='probability0' type="text" value="10">
+                </div>
+            </div>
+        </div>
+        <div id="1" class="point">
+            <div class="pointNumber">1</div>
+            <div class="pointProp">
+                <div>
+                    <label>Путь</label><input id='width1'type="text" value="0.5">
+                </div>
+                <div>
+                    <label>Вероятность</label><input id='probability1' type="text" value="10">
+                </div>
+            </div>
+        </div>
+        <div id="2" class="point">
+            <div class="pointNumber">2</div>
+            <div class="pointProp">
+                <div>
+                    <label>Путь</label><input id='width2'type="text" value="0.5">
+                </div>
+                <div>
+                    <label>Вероятность</label><input id='probability2' type="text" value="10">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
